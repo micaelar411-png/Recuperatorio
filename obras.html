@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tercera Pagina</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="contenedor">
+    <header>
+        <h1>Laurie Anderson</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Indice</a></li>
+                <li><a href="trayectoria.html">Trayectoria</a></li>
+    </ul>
+        </nav>
+    </header>
+    <main> 
+        <section class="column">      
+    <article class="chico">
+      <h2>Obras y conceptos claves.</h2>
+      <ul>
+        <li>O Superman</li>
+        <li>United States Live</li>
+        <li>Big Science</li>
+        <li>Lenguaje y narrativa</li>
+        <li>Performance multimedia</li>
+        <li>Manipulación de la voz</li>
+      </ul>
+      <section class="datoscuriosos">
+    <button type="button" id="datocurioso">Dato curioso</button>
+    <p id="mensajecurioso"></p>
+    </section>
+    </article>
+     <article class="grande">
+         <h2>Tecnología, narrativa y experimentación</h2>
+                 <p>El trabajo de Laurie Anderson se caracteriza por la integración de tecnologías en sus procesos creativos, no como un fin en sí mismo, sino como una herramienta para expandir el lenguaje artístico. Utiliza dispositivos electrónicos, procesamiento de voz y medios audiovisuales para construir experiencias que combinan relato y experimentación. <br>Sus obras suelen desarrollarse como narraciones fragmentadas, donde la voz guía al espectador a través de historias que mezclan lo personal, lo político y lo ficticio. Este enfoque permite explorar nuevas formas de contar, donde la estructura no es lineal y la interpretación queda abierta.</p>
+        <img src="img/anderson-2.jpg" alt="Laurie Anderson" height="400" width="500">
+    </article>
+    </section>
+    <section>
+        <article>
+            <h2>Galeria</h2>
+            <h3>Performances y espectaculos multimedia</h3>
+            <div id="galeria">
+                </div>
+        </article>
+    </section> 
+       <Section>
+        <article>
+        <h2>Repositorio musical - Laurie Anderson</h2>
+        <p>Complete los datos para acceder a la informacion</p>
+        <p>poner las instrucciones</p>
+        <form action="#" method="get">
+         <fieldset id="fieldsetconfiguracion">
+             <legend>Configuracion</legend>
+            <label for="cantidad de obras">Cantidad de obras</label>
+            <input type="number" name="cantidad de obras" id="cantidaddeobras" min="1" required>
+            <label for="tiempo de transferencia">Tiempo estimado de transferencia (ms)</label>
+            <input type="number" id="tiempodetransferencia" min="0.01" required>
+            <label for="costo mensual"> Costo mensual de almacenamiento</label>
+            <input type="number" id="costomensual" min="0.01" step="0.01">
+            <button type="button" id="botoniniciar">Iniciar carga</button>
+        </fieldset>
+        </form>
+        <form action="#" method="get">
+            <fieldset id="fieldsetobra" disabled>
+        <legend>Datos de la obra</legend>
+         <p id="contadorobras">Obras Cargadas: 0</p>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required>
+            <label for="duracion">Duracion en minutos</label>
+            <input type="number" name="duracion" id="duracion" min="10" step="0.1">
+            <label for="peso de la obra">Peso del archivo (MB)</label>
+            <input type="number" id="pesodelaobra" min="0.1" step="0.1" required>
+            <button type="button" id="agregar">Guardar obra</button>
+        </fieldset>
+        </form>
+        <section class="acciones">
+            <button type="button" id="botoncalcular">Calcular</button>
+            <button type="button" id="botonreset">Reiniciar</button>
+        <div id="resultados"></div>
+        </section>
+        </article>
+       </Section>
+    </main>
+        <footer>
+            <address>
+            <p> <strong>2026</strong>| Para contactarse escribir a <a href="laurie@artedigital.com">Laurie Anderson</a></p>
+            </address> 
+        </footer>
+        </div>
+        <script src="js/galeria.js"></script>
+        <script src="js/formulario.js"></script>
+</body>
+
+</html>
